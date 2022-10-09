@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Destino de viagem </title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         nav {
+            margin: 1cm;
+            border: 1px solid black;
+            background-color: lightseagreen ; 
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav> 
+        <table>
+            <tr> 
+                <td id="Menu_acesso"> <h2> Menu de acesso   </h2> </td>
+            </tr>
+          
+             <tr>
+             <td>
+                <ul>
+                    <li> <a href="index.html"> Menu principal</a></li> 
+                    <li>  <a href="Cadastro de Usuário.html"> Cadastro de Usuário</a>  </li>
+                    <li> <a href="Destino da viagem.html"> Destino da viagem </a>  </li>
+                </ul>
+            </td>
+            </tr>
+         </table>
+        </nav>
+
+
+    <fieldset>
+        <legend> <h1 id="Cad_cor"> Destino </h1>  </legend>
+   
+<form autocomplete="off" method="post" action="receber_dados_do_usuario">
+
+    <label for="ilocal"> Nome do local: </label>
+    <input type="text" id="ilocal" name="ilocal" value="" placeholder="Ex: Rio de Janeiro"><br><br>
+
+
+   <input type="submit" value="Enviar dados">
+   <input type="reset" value=" Apagar ">
+
+</fieldset>
+</main>
+
+</body>
+</html>

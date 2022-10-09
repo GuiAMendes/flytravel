@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro de Usuário </title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            margin: 1cm;
+            text-align: center;
+            background-color: lightseagreen;
+        }
+        #Cad_cor {
+            background-color: lightseagreen;
+        }
+        nav {
+            margin: 1cm;
+            border: 1px solid black;
+            background-color: lightseagreen ; 
+            width: 30%;
+        }
+        main { 
+            margin: 1cm;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header> 
+        <table>
+            <tr>
+                <td> <img  width="50" src="imagens/cadastro.png" alt=" A imagem mostra um pequeno icone com uma prancheta e uma lista de tarefas."></td>
+                <td> <h1> Cadastre-se aqui para iniciar a navegação </h1> </td>
+            </tr>
+        </table>
+        
+    </header>
+
+
+
+    <main>
+   
+        <fieldset>
+            <legend> <h1 id="Cad_cor"> Cadastro </h1>  </legend>
+       
+    <form autocomplete="off" method="post" action="receber_dados_do_usuario">
+
+        <label for="inome"> Nome: </label>
+        <input type="text" id="inome" name="inome" value="" placeholder="Ex: José"><br><br>
+
+        <label for="isexo"> Sexo: </label>
+        <select name="isexo" id="isexo" value="--------">
+            <option value="Masculino"> Masculino</option>
+            <option value=" Feminino"> Feminino </option>
+        </select><br><br>
+
+        <label for="iemail"> E-mail: </label>
+        <input type="email" id="iemail" name="iemail" value=""><br><br>
+
+        <label for="pwd"> Crie uma senha :</label>
+        <input type="password" id="pwd" name="pwd" value="" placeholder="Ex: 12345678"><br><br>
+
+       <input type="submit" value="Enviar dados">
+       <input type="reset" value=" Apagar ">
+
+    </fieldset>
+    </main>
+
+    <nav> 
+        <table>
+            <tr> 
+                <td id="Menu_acesso"> <h2> Menu de acesso   </h2> </td>
+            </tr>
+          
+             <tr>
+             <td>
+                <ul>
+                    <li> <a href="index.html"> Menu principal</a></li> 
+                    <li>  <a href="Cadastro de Usuário.html"> Cadastro de Usuário</a>  </li>
+                    <li> <a href="Destino da viagem.html"> Destino da viagem </a>  </li>
+                </ul>
+            </td>
+            </tr>
+         </table>
+        </nav>
+    </form>
+    <footer>
+        <h3> <span style="color: white;"> All rights to this platform are reserved by FlyTravel S.A. </span></h3>
+     </footer>
+       
+    </body>
+</html>
